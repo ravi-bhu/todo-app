@@ -1,0 +1,61 @@
+.todo-item {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease-in;
+}
+
+.todo-item button {
+  border: none;
+  background-color: transparent;
+}
+
+.todo-item button:hover {
+  cursor: pointer;
+}
+
+.todo-item input[type='radio'] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--very-light-grayish-blue);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.todo-item input[type='radio']::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  /* background-color: red; */
+  background-image: url('../../assets/icons/icon-check.svg'),
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.todo-item input[type='radio']:checked::before {
+  transform: scale(1);
+}
+
+.todo-item p {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
+  border-top: 1px;
+  color: #ccc;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #ccc;
+}

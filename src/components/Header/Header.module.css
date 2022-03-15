@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  min-width: var(--app-width);
+  /*margin: 3rem auto;*/
+}
+
+.header h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+.header button {
+  border: none;
+  background-color: transparent;
+}

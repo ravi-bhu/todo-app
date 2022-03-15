@@ -1,0 +1,21 @@
+.todo-form {
+  display: flex;
+  padding: 1rem;
+}
+
+.todo-form input[type='text'] {
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  padding: 0 0 0 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.todo-form input[type='radio'] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.15em solid var(--very-light-grayish-blue);
+  border-radius: 50%;
+}

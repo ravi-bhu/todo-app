@@ -1,0 +1,37 @@
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+}
+
+.todo-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.todo-action > p {
+  margin: 0;
+}
+
+.todo-action button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  display: block;
+}
+
+.todo-action button:hover {
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter > div {
+  padding: 0 0.4rem;
+}
+
+.active {
+  color: var(--bright-blue);
+}
