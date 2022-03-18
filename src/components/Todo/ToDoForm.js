@@ -20,6 +20,7 @@ export default function ToDoForm() {
       <input type="radio" disabled />
       <input
         type="text"
+        placeholder="Create a new todo..."
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
       />

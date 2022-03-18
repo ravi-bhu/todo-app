@@ -1,19 +1,18 @@
-:root {
-  --bright-blue: hsl(220, 98%, 61%);
-}
-
 .todo-action {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
+  color: var(--color-action);
 }
 
 .todo-action > p {
+  color: inherit;
   margin: 0;
 }
 
 .todo-action button {
+  color: inherit;
   border: none;
   background-color: transparent;
   font: inherit;
@@ -22,16 +21,17 @@
 
 .todo-action button:hover {
   cursor: pointer;
+  color: var(--light-grayish-blue-hover);
 }
 
-.filter {
+.todo-action .filter {
   display: flex;
 }
 
-.filter > div {
+.todo-action .filter > div {
   padding: 0 0.4rem;
 }
 
-.active {
+.todo-action .active {
   color: var(--bright-blue);
 }

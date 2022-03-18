@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ToDoContext } from '../../context/ToDoContext';
 import styles from './ToDoAction.module.css';
 
-export default function ToDoAction({ count }) {
+export default function ToDoAction() {
   const toDoContext = useContext(ToDoContext);
   const activeFilter = toDoContext.getActiveFilter();
   return (

@@ -6,7 +6,12 @@
   transition: all 1s ease-in;
 }
 
+.todo-item:hover button {
+  display: block;
+}
+
 .todo-item button {
+  display: none;
   border: none;
   background-color: transparent;
 }
@@ -33,7 +38,6 @@
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  /* background-color: red; */
   background-image: url('../../assets/icons/icon-check.svg'),
     linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   background-repeat: no-repeat;
@@ -47,15 +51,22 @@
 .todo-item p {
   padding: 0 1rem;
   cursor: pointer;
+  color: var(--color-todo-item);
 }
 
-hr {
+.todo-item hr {
   margin: 0;
   border-top: 1px;
   color: #ccc;
 }
 
-.complete {
+.todo-item p.complete {
   text-decoration: line-through;
-  color: #ccc;
+  color: var(--color-completed-items);
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-item button {
+    display: block;
+  }
 }

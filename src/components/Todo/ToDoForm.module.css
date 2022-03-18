@@ -4,8 +4,10 @@
 }
 
 .todo-form input[type='text'] {
+  background-color: var(--card-background-color);
+  color: var(--color-todo-item);
   font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: inherit;
   border: none;
   padding: 0 0 0 1rem;
   outline: none;
@@ -13,9 +15,17 @@
 }
 
 .todo-form input[type='radio'] {
+  flex: 0 0 auto;
+  margin-top: 0;
   appearance: none;
   width: 1.5rem;
   height: 1.5rem;
   border: 0.15em solid var(--very-light-grayish-blue);
   border-radius: 50%;
+}
+
+.todo-form input::placeholder {
+  color: var(--color-placeholder);
+
+  justify-content: center;
 }

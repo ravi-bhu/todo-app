@@ -21,6 +21,24 @@
   --very-dark-grayish-blue2: hsl(237, 14%, 26%);
 
   --app-width: 500px;
+
+  --background-color: var(--very-light-gray);
+  --background-image: url('./assets/images/bg-desktop-light.jpg');
+  --card-background-color: #fff;
+  --color-action: var(--very-dark-grayish-blue--light-mode);
+  --color-placeholder: var(--dark-grayish-blue--light-mode);
+  --color-todo-item: var(--very-dark-grayish-blue--light-mode);
+  --color-completed-items: var(--very-dark-grayish-blue--light-mode);
+}
+
+[data-theme='dark'] {
+  --background-color: var(--very-dark-blue);
+  --background-image: url('./assets/images/bg-desktop-dark.jpg');
+  --card-background-color: var(--very-dark-desaturated-blue);
+  --color-action: var(--very-dark-grayish-blue--light-mode);
+  --color-placeholder: var(--light-grayish-blue--dark-mode);
+  --color-todo-item: var(--light-grayish-blue--dark-mode);
+  --color-completed-items: var(--very-dark-grayish-blue--dark-mode);
 }
 
 * {
@@ -30,11 +48,23 @@
 body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  background: var(--very-light-gray) url('./assets/images/bg-desktop-light.jpg')
-    no-repeat;
+}
+
+.app {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
   background-attachment: fixed;
   background-position: center top;
   background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .spacer {
@@ -45,12 +75,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 30rem;
+  margin: 3rem 0;
 }
 
 .card {
-  background-color: #fff;
   border-radius: 5px;
   width: var(--app-width);
+  background-color: var(--card-background-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

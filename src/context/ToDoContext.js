@@ -38,7 +38,7 @@ const toDosReducer = (state, action) => {
   }
 };
 
-export function ToDoContextProvider({ children }) {
+export function ToDoProvider({ children }) {
   const [toDosState, dispatch] = useReducer(toDosReducer, defaultToDosState);
   const [filter, setFilter] = useState('ALL');
 
