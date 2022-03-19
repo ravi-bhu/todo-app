@@ -54,12 +54,6 @@
   color: var(--color-todo-item);
 }
 
-.todo-item hr {
-  margin: 0;
-  border-top: 1px;
-  color: #ccc;
-}
-
 .todo-item p.complete {
   text-decoration: line-through;
   color: var(--color-completed-items);

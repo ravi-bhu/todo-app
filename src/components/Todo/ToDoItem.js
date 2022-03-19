@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import iconCheck from '../../assets/icons/icon-cross.svg';
 import { ToDoContext } from '../../context/ToDoContext';
+import Divider from '../UI/Divider';
 import styles from './ToDoItem.module.css';
 
 function ToDoItem({ todo }) {
@@ -20,7 +21,7 @@ function ToDoItem({ todo }) {
           <img src={iconCheck} alt="delete" />
         </button>
       </li>
-      <hr />
+      <Divider />
     </>
   );
 }

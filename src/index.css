@@ -29,6 +29,7 @@
   --color-placeholder: var(--dark-grayish-blue--light-mode);
   --color-todo-item: var(--very-dark-grayish-blue--light-mode);
   --color-completed-items: var(--very-dark-grayish-blue--light-mode);
+  --color-divider: var(--light-grayish-blue--light-mode);
 }
 
 [data-theme='dark'] {
@@ -39,6 +40,7 @@
   --color-placeholder: var(--light-grayish-blue--dark-mode);
   --color-todo-item: var(--light-grayish-blue--dark-mode);
   --color-completed-items: var(--very-dark-grayish-blue--dark-mode);
+  --color-divider: var(--very-dark-grayish-blue--dark-mode);
 }
 
 * {
