@@ -20,7 +20,7 @@
   --very-dark-grayish-blue--dark-mode: hsl(233, 14%, 35%);
   --very-dark-grayish-blue2: hsl(237, 14%, 26%);
 
-  --app-width: 500px;
+  --app-width: 30rem;
 
   --background-color: var(--very-light-gray);
   --background-image: url('./assets/images/bg-desktop-light.jpg');
@@ -81,8 +81,14 @@ body {
 }
 
 .card {
-  border-radius: 5px;
+  border-radius: 0.3rem;
   width: var(--app-width);
   background-color: var(--card-background-color);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+@media only screen and (max-width: 30rem) {
+  :root {
+    --app-width: calc(100vw - 1rem);
+  }
 }

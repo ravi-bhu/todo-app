@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   min-width: var(--app-width);
-  /*margin: 3rem auto;*/
 }
 
 .header h1 {

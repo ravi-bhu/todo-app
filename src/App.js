@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Footer from './components/Footer';
 import Header from './components/Header/Header';
 import Todo from './components/Todo';
 import { ThemeContext } from './context/ThemeContext';
@@ -11,7 +10,6 @@ function App() {
       <main className="container">
         <Header />
         <Todo />
-        <Footer />
       </main>
     </div>
   );
